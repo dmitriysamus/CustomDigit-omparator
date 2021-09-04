@@ -52,7 +52,7 @@ public class CustomDigitComparatorTest {
      */
     @Test
     public void compare_positive_Test() {
-        positive.sort(new CustomDigitComparator());
+        positive.sort(customDigitComparator);
         Assert.assertEquals(Arrays.asList(0, 2, 1, 3), Arrays.asList(positive.toArray()));
     }
 
@@ -63,7 +63,7 @@ public class CustomDigitComparatorTest {
      */
     @Test
     public void compare_negative_Test() {
-        negative.sort(new CustomDigitComparator());
+        negative.sort(customDigitComparator);
         Assert.assertEquals(Arrays.asList(-4, -2, -3, -1), Arrays.asList(negative.toArray()));
     }
 
@@ -74,7 +74,7 @@ public class CustomDigitComparatorTest {
      */
     @Test
     public void compare_all_Test() {
-        all.sort(new CustomDigitComparator());
+        all.sort(customDigitComparator);
         Assert.assertEquals(Arrays.asList(-2, 0, 2, -3, -1, 1, 3), Arrays.asList(all.toArray()));
     }
 
